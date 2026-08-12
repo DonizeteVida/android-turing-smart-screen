@@ -2,9 +2,9 @@
 #include <string>
 
 extern "C" JNIEXPORT jstring JNICALL
-Java_com_turing_smart_screen_NativeLib_stringFromJNI(
+Java_com_turing_smart_screen_TuringSmartScreen_helloWorld(
         JNIEnv* env,
-        jobject /* this */) {
+        jclass clazz) {
     std::string hello = "Hello from C++";
     return env->NewStringUTF(hello.c_str());
 }
