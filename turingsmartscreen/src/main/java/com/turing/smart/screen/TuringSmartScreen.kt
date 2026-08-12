@@ -8,5 +8,8 @@ class TuringSmartScreen {
 
         @JvmStatic
         external fun helloWorld(): String
+
+        @JvmStatic
+        external fun getSerialDevices(): List<String>
     }
 }

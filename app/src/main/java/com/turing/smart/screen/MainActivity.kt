@@ -19,6 +19,9 @@ class MainActivity : ComponentActivity() {
             TuringSmartScreenTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     Text(TuringSmartScreen.helloWorld(), Modifier.padding(innerPadding))
+
+                    val serialDevices = TuringSmartScreen.getSerialDevices()
+                    println(serialDevices)
                 }
             }
         }
